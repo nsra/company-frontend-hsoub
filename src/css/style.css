@@ -1,0 +1,355 @@
+@import './projects.css';
+@import './about.css';
+@import './blog.css';
+@import './contact.css';
+
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-menu .navbar {
+    font-weight: bold;
+    padding: 0px 100px !important;
+}
+
+.top-menu .navbar .navbar-nav > li > a {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.top-menu .navbar .navbar-nav .active  a {
+     color: #FF7766 !important;
+     border-bottom: 1px solid #FF7766;
+}
+
+.top-menu .navbar .navbar-nav > li > a:hover {
+    color: #FF7766 !important;
+    background-color: #EEE;
+    border-bottom: 1px solid #FF7766;
+}
+
+/*لكي تظهر الصور على طول عرض الشاشة*/
+.carousel-top .carousel-row {
+    display: block !important;
+}
+
+.carousel-top .carousel .carousel-item img {
+    height: 450px;
+}
+
+.carousel-top .carousel .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 20px 5px 0px 0px;
+}
+
+.carousel-top .carousel .carousel-indicators li.active { 
+    background-color: #FF7766;
+}
+
+.carousel-top .carousel .overlay {
+    position: absolute;
+    background-color: rgba(65,155,155,0.5);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.carousel-top .carousel .carousel-caption h1 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.carousel-top .carousel .carousel-caption h4 {
+    width: 60%;
+    color: #EEE;
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    color:#FF7766 !important;
+    border: 1px solid #FF7766 !important;
+    font-weight: bold !important;
+}
+
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active {
+    color: white !important;
+    background-color: #FF7766 !important;
+    border: 1px solid #EEE !important;
+}
+.who-are-we .custom-paragraph {
+    font-weight: normal;
+    line-height: 2em;
+    margin: 10px 20%;
+}
+
+.who-are-we .custom-btn-main {
+    padding: 20px 20px;
+    background-color:#FF7766 !important;
+    color:white;
+    font-weight: bold;
+    width:250px;
+}
+
+.who-are-we .company-name {
+    color:#FF7766;
+}
+
+.latest-projects {
+    background-color: #FFFFCC;
+}
+
+#latest-company-projects {
+    width: 80%;
+}
+
+#latest-company-projects .thumbnail2 {
+    position:relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#latest-company-projects .caption2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(65, 155, 155, 0.5);
+    max-width: 100%;
+    height: 100%;
+    padding: 2%;
+    display: none;
+    text-align: center;
+    color:#fff !important;
+    z-index: 2;
+}
+
+#latest-company-projects .project-category {
+    position: absolute;
+    right: 0px;
+    top: 5%;
+    font-size: 100%;
+    font-weight: bolder;
+    background-color: rgba(240,240, 240, 0.75);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 5px 20px 0px #202020;
+}
+
+#latest-company-projects a.carousel-control-next {
+    position: absolute;
+    left: -5%;
+    color: #252222;
+    width: 0;
+}
+
+#latest-company-projects a.carousel-control-prev {
+    position: absolute;
+    right: -6%;
+    color: #252222;
+    width: 0;
+}
+
+#latest-company-projects a.carousel-control-next:hover,
+#latest-company-projects a.carousel-control-prev:hover,
+#latest-company-projects a.carousel-control-next:focus,
+#latest-company-projects a.carousel-control-prev:focus {
+    color: #252222;
+}
+
+.latest-projects .custom-btn-main {
+    padding: 20px 20px;
+    background-color:#FF7766 !important;
+    color:white;
+    font-weight: bold;
+    width:250px;
+}
+
+.project-details {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.said-about-company .custom-img {
+    border-radius:10px;
+    margin: 15px 15px;
+}
+
+.said-about-company .custom-paragraph {
+    font-weight: normal;
+    line-height: 2em;
+    margin: 10px 20%;
+}
+
+#said-about-company-carousel .fa-angle-right,
+#said-about-company-carousel .fa-angle-left {
+    color: #252222;
+}
+
+#said-about-company-carousel a.carousel-control-next {
+    position: absolute;
+    left: 8%;
+    color: #252222;
+    width: 0;
+}
+
+#said-about-company-carousel a.carousel-control-prev {
+    position: absolute;
+    right: 8%;
+    color: #252222;
+    width: 0;
+}
+
+.clients {
+    background-color: #419B9B;
+}
+
+.clients .client {
+	display: flex;
+    background-color: #FFFFFF;
+	width: 150px;
+    height: 75px;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.latest-posts .card-body {
+    width: 90%;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    position: relative;
+    background-color: white;
+    top: -17px;
+    left: -5%;
+}
+.latest-posts .card-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.latest-posts .card-text {
+    font-size: 14px;
+}
+
+footer {
+    height: 450px;
+    background-color: #393939;
+}
+
+footer h2 {
+    color: #EEE;
+    font-size: 150%;   
+}
+
+footer .line1 {
+    width: 5%;
+    border-top: 3px solid #EEE;
+}
+
+footer .line2 {
+    width: 60%;
+    border-top: 3px solid #EEE;
+}
+
+footer #footer-nav-links a {
+    text-decoration: none;
+    color:#BBBBBB;
+    margin-left: 15px;
+    font-size: 90%;
+}
+
+footer #footer-nav-links a:hover,
+footer #footer-nav-links a:focus {
+    color: #EEE;
+}
+
+footer .form input {
+    background-color: #202020;
+    border-radius: 1px;
+    border: 0px solid #EEE;
+}
+
+footer .form .form-control:focus {
+    border-color: #EEE;
+    box-shadow: 0 0 2px 0 #EEE;
+    background-color: #202020;
+    color: #EEE
+}
+
+footer .custom-btn {
+    color: #363636 !important;
+    background-color: #EEE;
+    border: 1px solid #EEE !important;
+}
+
+footer .custom-btn:hover,
+footer .custom-btn:focus {
+    color: #EEE !important;
+    background-color: #363636 !important;
+    border: 1px solid #EEE;
+    transition-property: border,color,background-color ;
+    transition-duration: 0.3s;
+}
+
+footer .copyright {
+    color: #969696;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+footer .copyright-link {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+footer .copyright-link:hover,
+footer .copyright-link:focus {
+    color: #EEE;
+}
+footer .form {
+    margin-right: 48px;
+    margin-left: 48px;
+}
+
+/* الشاشات الصغيرة والصغيرة جداً*/
+
+@media (max-width: 991px) {
+    /*مسح الإطار السفلي من عناصر القائمة العلوية*/
+    .top-menu .navbar .navbar-nav a {    
+        border-bottom: none !important;
+        padding-right: 5px;
+    }
+    /*نحدد عرض للمشاريع لكي لا تظهر الطبقة التي فوقها على طول الصفحة*/
+    #latest-company-projects .thumbnail2 {
+        width: 350px;
+    }
+}

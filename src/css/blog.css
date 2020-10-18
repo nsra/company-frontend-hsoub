@@ -1,0 +1,43 @@
+.banner-blog #banner-img {
+    background-image: url(../images/banner-blog.jpg);
+}
+
+.posts .card .card-body .card-text {
+    white-space: nowrap;/*منع النزول لسطر جديد والإكتفاء بسطر واحد*/
+    overflow: hidden;/*إخفاء جميع المعلومات بعد السطر الأول*/
+    text-overflow: ellipsis;/*إضافة النقط الثلاث في نهاية الجملة*/
+    color: #a9a9a9;
+}
+
+.search-box {
+    padding: 15px;
+    margin-top: 5px;
+    box-shadow: 0px 1px 1px 1px #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+
+.banner-blog-details #banner-img {
+    background-image: url(../images/banner-blog-title.jpg);
+}
+
+.posts-details .card .card-body .card-text {
+    color: #a9a9a9;
+}
+
+.posts-details .card .card-body .card-title {
+    font-weight: 800;
+    color: #FF7766;
+}
+
+.posts-details .post-share {
+    color: #FF7766;
+}
+
+.banner-add-blog #banner-img {
+    background-image: url(../images/banner-add-blog.jpg);
+}
+
+.add-blog label {
+    font-size: 14px;
+    font-weight: bold;
+}

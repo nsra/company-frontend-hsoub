@@ -1,0 +1,67 @@
+.banner #banner-img {
+    background-image: url(../images/projects-banner.jpg);
+    background-repeat: no-repeat;
+    background-position:  50% 10% , 100% 0%;
+    height: 250px;
+    width: 100%;
+}
+
+.banner .overlay {
+    position: absolute;
+    background-color: rgba(65,155,155,0.5);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .overlay .title1 {
+    font-weight: bold;
+    color: white;
+}
+
+.our-works .custom-btn-2 {
+    color: #363636;
+    background-color: white;
+    border:none;
+    border-radius: 1px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.our-works .custom-btn-2:hover,
+.our-works .custom-btn-2:focus,
+.our-works .custom-btn-2:focus:active{
+    color: white;
+    background-color: #FF7766;
+    border:none;
+}
+
+.banner-project-details #banner-img {
+    background-image: url(../images/projects-banner.jpg);
+}
+
+/*gallery*/
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer {
+    display: block;
+  }
+  
+  .thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.project-details .card .card-body .card-title {
+    font-weight: 800;
+    color: #FF7766;
+}
