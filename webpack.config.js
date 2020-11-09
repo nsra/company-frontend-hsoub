@@ -8,7 +8,7 @@ module.exports = {
     },
 
     output: {
-        publicPath: '/',
+        publicPath: '',
         path: path.resolve(__dirname, 'build'),//المسار الذي سنضع فيه الملفات في الهدف
         filename: 'js/bundle.js',//سيُنشىء مجلد ويضع بداخله ملفات جافا سكريبت كاملةً
     },
@@ -18,7 +18,15 @@ module.exports = {
 
             { //ملفات التنسيق ويوجد لهم كمالة في الأسفل
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [
+                  {
+                    loader: MiniCssExtractPlugin.loader, 
+                    options: {
+                      publicPath: '/' 
+                    }
+                  },
+                  'css-loader'
+                ],
             },
 
             {
@@ -79,7 +87,7 @@ module.exports = {
 
     devServer: {//إعدادات الخادم
         contentBase: path.join(__dirname, "build"),
-        open: true, //لفتح المشروع بشكل تلقائي في المتصفح
+        // open: true, //لفتح المشروع بشكل تلقائي في المتصفح
         writeToDisk: true, //build لإنشاء مجلد ال
         stats: 'errors-only', //فقط أظهر الأخطاء
         //compress: true,
